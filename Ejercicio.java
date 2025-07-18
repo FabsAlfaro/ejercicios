@@ -1,14 +1,14 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.ejercicio;
 import java.util.Scanner;
 
 public class Ejercicio {
    
-    public static void evaluarRango(int inicio, int fin){   
-        
+    public static void evaluarRango(){   
+        int inicio; 
+        int fin;
         Scanner entrada = new Scanner(System.in);
         
         System.out.print("Ingresa el rango Inicial: ");
@@ -19,7 +19,7 @@ public class Ejercicio {
         
         for(int i=inicio; i<=fin; i++ ){
             double fx = evaluarFuncion(i);
-            System.out.println("f(x)" + fx);
+            System.out.println("x= " + i + " f(x)= " + fx);
         }       
     }
      
@@ -30,7 +30,7 @@ public class Ejercicio {
    
     public static void main(String[] args) {
 
-        evaluarRango(2,5);
+        evaluarRango();
         
     }
 }
